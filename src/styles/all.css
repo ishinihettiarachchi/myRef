@@ -1,3 +1,13 @@
+.all-conatainer{
+    background-image: url('https://th.bing.com/th/id/R.d916a60fa44e4f320b7dff33bf11479b?rik=iw9PFz%2fA4XyZqg&riu=http%3a%2f%2fpic.qiantucdn.com%2f10%2f26%2f70%2f47bOOOPIC3d.jpg&ehk=v54%2fSlA2HWEA9xCZzRvgdC9%2b3YDED42FB9pb66o2kpI%3d&risl=&pid=ImgRaw&r=0');
+    width: 100%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+} 
+
+
 .headings{
     padding: 30px;
 }
@@ -10,7 +20,6 @@
     justify-content: center;
     align-items: center;
     margin: 20px 0;
-    background-color: rgb(238, 245, 245);
 }
 
 .read-icon{
