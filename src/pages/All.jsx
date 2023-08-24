@@ -1,4 +1,4 @@
-import React from 'react'
+import {React } from 'react'
 import Header from '../components/Header'
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
@@ -6,6 +6,9 @@ import '../styles/all.css'
 import { db } from '../firebase-config';
 import { collection,getDocs } from 'firebase/firestore';
 import {useState,useEffect} from 'react'
+import {Breadcrumbs, Typography} from '@mui/material'
+import {Link} from 'react-router-dom';
+
 
 function All() {
 
@@ -25,6 +28,15 @@ function All() {
   return (
     <div>
         <Header/>
+        <Breadcrumbs aria-label="breadcrumb" className='prev'>
+          <Link 
+            to= '/'
+            className='link'
+          >
+            Home
+          </Link>
+          <Typography >View All</Typography>
+        </Breadcrumbs>
         <div className="container all-conatainer">
         <div className="row headings">
                 <div className="col-5 name">
