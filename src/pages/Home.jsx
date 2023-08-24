@@ -24,7 +24,7 @@ function Home
                     <Link to='/new'><button className='add'>Add New</button></Link>
                 </div>
                 <div className="col-6 button">
-                    <button className='remove'>Remove</button>
+                    <button className='remove'>View All</button>
                 </div>
             </div>
             <div className="row row2">

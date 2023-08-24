@@ -90,7 +90,7 @@ function New() {
                 <div class="col">
                   <div class="form-outline">
                     <input type="text" id="form8Example3" class="form-control" value={category} onChange={(e)=>{setCategory(e.target.value)}}/>
-                    <label className="form-label new" for="form8Example3">category</label>
+                    <label className="form-label new" for="form8Example3">Category</label>
                   </div>
                 </div>
                 <div class="col">
