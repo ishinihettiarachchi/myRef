@@ -5,13 +5,34 @@ import {Breadcrumbs, Typography} from '@mui/material'
 import {Link} from 'react-router-dom';
 import { db } from '../firebase-config';
 import { collection, addDoc } from "firebase/firestore";
+import { storage } from "../firebase-config";
+import {
+  ref,
+  uploadBytes
+} from "firebase/storage";
 
+import {v4} from 'uuid'
 
 function New() {
   const [name, setName] = useState('');
   const [author, setAuthor] = useState('');
   const [year, setYear] = useState('');
   const [category, setCategory] = useState('');
+  const [file, setFile] = useState('');
+
+  const imagesListRef = ref(storage, "files/");
+  const uploadFile = () => {
+    if (file == null) return;
+    const fileRef = ref(storage, `files/${file.name + v4()}`);
+    uploadBytes(fileRef, file).then (()=>{
+        alert('file uploaded');
+    }
+    )
+    
+  };
+
+
+
   
   const addNew=async()=>{
     const docRef = await addDoc(collection(db, "references"), {
@@ -79,14 +100,15 @@ function New() {
                     <label className="form-label new" for="form8Example4">Published Year</label>
                   </div>
                 </div>
-                <div class="col">
-                  
+                <div class="col">  
                   <div class="form-outline">
-                    <input type="email" id="form8Example5" class="form-control" />
-                    <label className="form-label new" for="form8Example5">Email address</label>
+                    <input type="file" id="form8Example5" class="form-control" onChange={(e)=>{setFile(e.target.files[0])}}/>
+                    <div className="upload-file">
+                        <button className='uploadButton' onClick={uploadFile}>Upload</button>     
+                    </div>
+                      
                   </div>
                 </div>
-
             </div>
             
         </div>

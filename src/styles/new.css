@@ -72,6 +72,21 @@
     box-shadow: 0 4px 15px 0 rgba(3, 42, 100, 0.75);
 }
 
+.upload-file{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+
+}
+
+.uploadButton{
+    background-color: rgb(0, 170, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-top: 10px;
+}
+
 .new-container label {
     font-weight: bold;
 }
