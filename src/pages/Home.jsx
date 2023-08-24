@@ -9,9 +9,11 @@ import hci from '../images/human-computer-interaction.png'
 import online from '../images/online-ref.png'
 import management from '../images/management.png'
 import programming from '../images/programming.png'
+import {Link} from 'react-router-dom';
 
 
 function Home
+
 () {
   return (
     <div>
@@ -19,7 +21,7 @@ function Home
         <div className="container home-container">
             <div className="row row1">
                 <div className="col-6 button">
-                    <button className='add'>Add New</button>
+                    <Link to='/new'><button className='add'>Add New</button></Link>
                 </div>
                 <div className="col-6 button">
                     <button className='remove'>Remove</button>

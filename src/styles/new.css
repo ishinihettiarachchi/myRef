@@ -1,0 +1,77 @@
+:root {
+    --bs-breadcrumb-divider: '>';
+  }
+  
+
+.title{
+    padding: 30px 0;
+}
+
+.title h2{
+    text-align: center;
+
+}
+
+.prev{
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.prev .link{
+    text-decoration: none;
+}
+
+.new-container{
+    background-color: #99e0eb;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+ .newButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.addButton {
+    width: 200px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.addButton:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.addButton:focus {
+    outline: none;
+
+}
+.addButton  {
+    background-image: linear-gradient(to right, #25aae1, #99e0eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(3, 42, 100, 0.75);
+}
+
+.new-container label {
+    font-weight: bold;
+}
