@@ -1,0 +1,111 @@
+:root {
+    --glow-color: hsl(215, 88%, 45%);
+  }
+
+
+
+.home-container .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.home-container .button button{
+    width: 200px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.home-container .button button:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.home-container .button button:focus {
+    outline: none;
+
+}
+.home-container .button button  {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.home-container .row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container .row2 .row-line1, .row-line2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.home-container .row2 .category{
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.home-container .row2 .category:hover{
+    position: relative;
+    color: var(--glow-color);
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    animation: border-flicker 2s linear infinite;
+    
+}
+
+@keyframes move-up6 {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes move-down1 {
+    to {
+      transform: translateY(10px);
+    }
+  }
+
+.home-container .row2 .category h4{
+    text-align: center;
+}
+
+.home-container .row2 .category .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container .row2 .category .image img{
+    width: 30%;
+}
