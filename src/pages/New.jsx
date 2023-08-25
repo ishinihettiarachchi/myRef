@@ -29,10 +29,7 @@ function New() {
     }
     )
     
-  };
-
-
-
+  }
   
   const addNew=async()=>{
     const docRef = await addDoc(collection(db, "references"), {
